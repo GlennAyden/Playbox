@@ -82,20 +82,30 @@
 - Admin role management (SUPER_ADMIN, ADMIN)
 
 ## Project Structure
+
+A new Next.js project has been initialized. The structure for the web pages is as follows:
+
 ```
 src/
-├── app/                    # Next.js App Router
-│   ├── (admin)/           # Admin routes
-│   ├── (auth)/            # Authentication routes
-│   ├── (user)/            # User dashboard routes
-│   └── api/               # API routes
-├── components/            # React components
-│   ├── forms/             # Form components
-│   ├── landing/           # Landing page components
-│   ├── layout/            # Layout components
-│   └── ui/                # UI components
-├── lib/                   # Utility libraries
-└── generated/             # Generated files (Prisma)
+└── app/
+    ├── page.tsx              # Homepage
+    ├── auth/
+    │   └── login/
+    │       └── page.tsx      # Login page
+    ├── dashboard/
+    │   └── page.tsx          # Dashboard page
+    ├── payment/
+    │   └── page.tsx          # Payment page
+    ├── history/
+    │   └── page.tsx          # History page
+    ├── referral/
+    │   ├── page.tsx          # Referral page
+    │   └── create/
+    │       └── page.tsx      # Create referral page
+    ├── blocked/
+    │   └── page.tsx          # Blocked page
+    └── extension/
+        └── page.tsx          # Extension page
 ```
 
 ## Environment Variables Required
